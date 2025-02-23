@@ -15,7 +15,7 @@ $_SESSION['total'] = $total;
         <title>Total Page</title>
     </head>
     <body>
-        <h3>Subtotal: $<?php echo $subtotal?></h3>
+        <h3>Subtotal: $<?php echo $subtotal ?></h3>
         <h3>Taxes(9.5%): $<?php echo round($tax, 2) ?></h3>
         <h3>------------------------------</h3>
         <h3>Total: $<?php echo round($total, 2) ?></h3>
@@ -25,6 +25,6 @@ $_SESSION['total'] = $total;
         <form action="CheckOut.php">
             <input type="submit" value="Checkout">
         </form>
-        
+
     </body>
 </html>
