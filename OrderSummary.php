@@ -17,32 +17,32 @@ $_SESSION['subtotal'] = $subtotal;
 ?>
 <!DOCTYPE HTML>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Order Summary Page</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Order Summary Page</title>
+    </head>
 
-<body>
-    <h1>Order Summary:</h1>
-    <!--
-    if statements to check for quantities in each phone option,
-    so the order summary shows what is being bought
-    -->
-    <?php
-    if($iphone15 > 0){
-        echo "iPhone 15 $699 x" . $iphone15;
-    }
-    if($iphone16 > 0){
-        echo "<br>iPhone 16 $799 x" . $iphone16;
-    }
-    if($iphone16plus > 0){
-        echo "<br>iPhone 16 Plus $999 x" . $iphone16plus;
-    }
-    ?>
-    <h2>Subtotal: $<?php echo $subtotal ?></h2>
-    <form action="Taxes.php">
-        <input type="submit" value="confirm">
-    </form>
-</body>
+    <body>
+        <h1>Order Summary:</h1>
+        <!--
+        if statements to check for quantities in each phone option,
+        so the order summary shows what is being bought
+        -->
+        <?php
+        if ($iphone15 > 0) {
+            echo "iPhone 15 $699 x" . $iphone15;
+        }
+        if ($iphone16 > 0) {
+            echo "<br>iPhone 16 $799 x" . $iphone16;
+        }
+        if ($iphone16plus > 0) {
+            echo "<br>iPhone 16 Plus $999 x" . $iphone16plus;
+        }
+        ?>
+        <h2>Subtotal: $<?php echo $subtotal ?></h2>
+        <form action="Taxes.php">
+            <input type="submit" value="confirm">
+        </form>
+    </body>
 </html>
 
